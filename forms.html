@@ -8,12 +8,46 @@
 </head>
 <body>
     <h1>Forms Demo</h1>
+    <!-- <button>OUTSIDE FORM</button> -->
+    <!--Does not submit form automatically because it is outside the form tags; can use JS to make it do something-->
 
     <form action="/tacos">
-        <input type="text" placeholder="username">
-        <input type="password" placeholder="password">
-        <input type="color">
-        <input type="number" placeholder="enter a number">
+        <!-- Any button inside a form tag has default behavior to submit that form -->
+        <!-- This can be changed by using "type" attribute set as "button" to make it act like a regular button and not a submit button-->
+        <!-- <button type="button">PLEASE DO NOT SUBMIT THE FORM</button> -->
+        <p>
+            <label for="username">Enter a Username: </label>
+            <input id="username" type="text" placeholder="username" name="username"> <!--Name attribute used when query is sent to server-->
+        </p>
+        <p>
+            <label for="password">Enter a Password: </label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <!-- <button>IN THE MIDDLE!</button> -->
+        <p>
+            <label for="color">Pick a Color: </label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <!-- Alternative way to label an input (less common, less flexibility in styling) -->
+            <!-- Will not need "for" attribute on label tag or "id" attribute on input tag -->
+            <label>
+                Enter a Number: 
+                <input type="number" placeholder="enter a number" name="num">
+            </label>
+        </p>
+        <!-- This button doesn't submit the form b/c of the "type" attribute -->
+        <button type="button">Regular Button (won't submit)</button>
+        <!-- This button submits the form! -->
+        <button>Submit!!!</button>
+        <!-- So does this one: -->
+        <!-- Less common, more clunky way to add a button using an input tag -->
+        <input type="submit" value="Click Me!">
     </form>
+    <!-- URL result of submitting form; note the name attributes: file:///C:/tacos?username=dylan&password=1234&color=%233744a9&num=19 -->
+    <!-- Name attribute equals the associated data/query input by user into the form fields, used to search server -->
+    <hr>
+    <!-- Outside of a form, no default submit behavior -->
+    <button>Not Inside Form</button>
 </body>
 </html>
