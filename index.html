@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css"> <!--Link to .css file-->
+    <title>CSS Intro</title>
+
+    <style>
+        h3{
+            color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <!-- IN-LINE STYLES are terrible; don't do it -->
+    <!-- Can't share styling between pages; have to style each element individually -->
+    <h1 style="color:purple;">Hello World!</h1>
+    <button style="background-color: palegreen;">I AM BUTTON</button>
+
+    <!-- THE STYLE ELEMENT are an improvement, but still not great -->
+    <!-- Can write CSS directly in document but not embedded in an element-->
+    <!-- Can style all element types simultaneously, but not across pages -->
+    <h3>I am an h3</h3>
+    <h3>I am an h3</h3>
+    <h3>I am an h3</h3>
+
+    <!-- EXTERNAL STYLESHEET is the best approach -->
+    <!-- Allows us to style each element only one time in a separate document -->
+    <!-- That separate document (.css) can be referenced/linked in each page -->
+    <h2>Styled by Linked CSS</h2>
+    <h2>Styled by Linked CSS</h2>
+    <h2>Styled by Linked CSS</h2>
+    <h2>Styled by Linked CSS</h2>
+
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, fugit, repellendus quidem aperiam laboriosam mollitia incidunt officiis repudiandae magnam labore numquam ipsa nisi obcaecati molestias velit cumque aliquid asperiores iure.
+    Dolorem, incidunt nemo consequatur blanditiis excepturi qui. Provident officiis, magni, excepturi illum temporibus aut odit soluta, suscipit alias ipsum amet repellendus sapiente possimus aspernatur impedit dolorem at reprehenderit. Perspiciatis, qui?
+    Eius, eum! Iusto repellendus sapiente dolor voluptas, veritatis quas in vel reiciendis consectetur. Eligendi architecto neque libero adipisci, dolorum, blanditiis consequatur non laboriosam nihil ad aut eveniet dolorem assumenda quidem.
+    </p>
+</body>
+</html>
